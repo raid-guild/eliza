@@ -20,6 +20,27 @@ export const models: Models = {
             [ModelClass.IMAGE]: "dall-e-3",
         },
     },
+    [ModelProviderName.ETERNALAI]: {
+        endpoint: settings.ETERNALAI_URL,
+        settings: {
+            stop: [],
+            maxInputTokens: 128000,
+            maxOutputTokens: 8192,
+            frequency_penalty: 0.0,
+            presence_penalty: 0.0,
+            temperature: 0.6,
+        },
+        model: {
+            [ModelClass.SMALL]:
+                "neuralmagic/Meta-Llama-3.1-405B-Instruct-quantized.w4a16",
+            [ModelClass.MEDIUM]:
+                "neuralmagic/Meta-Llama-3.1-405B-Instruct-quantized.w4a16",
+            [ModelClass.LARGE]:
+                "neuralmagic/Meta-Llama-3.1-405B-Instruct-quantized.w4a16",
+            [ModelClass.EMBEDDING]: "",
+            [ModelClass.IMAGE]: "",
+        },
+    },
     [ModelProviderName.ANTHROPIC]: {
         settings: {
             stop: [],
@@ -33,7 +54,7 @@ export const models: Models = {
         model: {
             [ModelClass.SMALL]: "claude-3-5-haiku-20241022",
             [ModelClass.MEDIUM]: "claude-3-5-sonnet-20241022",
-            [ModelClass.LARGE]: "claude-3-opus-20240229",
+            [ModelClass.LARGE]: "claude-3-5-sonnet-20241022",
         },
     },
     [ModelProviderName.CLAUDE_VERTEX]: {
@@ -178,7 +199,7 @@ export const models: Models = {
             [ModelClass.SMALL]:
                 settings.SMALL_OPENROUTER_MODEL ||
                 settings.OPENROUTER_MODEL ||
-                "nousresearch/hermes-3-llama-3.1-70b",
+                "nousresearch/hermes-3-llama-3.1-405b",
             [ModelClass.MEDIUM]:
                 settings.MEDIUM_OPENROUTER_MODEL ||
                 settings.OPENROUTER_MODEL ||

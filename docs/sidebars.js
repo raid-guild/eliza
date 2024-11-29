@@ -166,6 +166,31 @@ const sidebars = {
               items: [
                 {
                   type: "doc",
+                  id: "community/streams/2024-11-24",
+                  label: "Hats Protocol Presentation",
+                },
+                {
+                  type: "doc",
+                  id: "community/streams/2024-11-22",
+                  label: "What Did You Get Done This Week 2",
+                },
+                {
+                  type: "doc",
+                  id: "community/streams/2024-11-21",
+                  label: "The Delphi Podcast",
+                },
+                {
+                  type: "doc",
+                  id: "community/streams/2024-11-15",
+                  label: "What Did You Get Done This Week 1",
+                },
+                {
+                  type: "doc",
+                  id: "community/streams/2024-11-10",
+                  label: "Threadguy x Shaw Interview",
+                },
+                {
+                  type: "doc",
                   id: "community/streams/2024-11-08",
                   label: "X: Memes, AI Agents, and DAOs",
                 },
